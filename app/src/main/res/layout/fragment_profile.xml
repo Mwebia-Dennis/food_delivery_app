@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_LL"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/profile_logo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:padding="7dp"
+                android:layout_marginTop="13dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/userNameTv"
+                    android:text="@string/app_author"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/phoneNumberTV"
+                    android:text="@string/phone_no"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#8c8c8c"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/editProfileBtn"
+                    android:textAllCaps="false"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:textColor="@drawable/outline_text_color_btn"
+                    android:background="@drawable/outlined_round_corners_btn"
+                    android:textSize="14sp"
+                    android:text="@string/edit_profile"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:id="@+id/account_header"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/profile_image_LL"
+            android:layout_marginStart="10dp"
+            />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/account_info"
+            android:id="@+id/account_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/account_header"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:id="@+id/settings_header"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/account_info"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/settings_layout"
+            android:id="@+id/settings_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/settings_header"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:id="@+id/help_header"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/settings_info"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/company_info"
+            android:id="@+id/help_info"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/help_header"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+
+</ScrollView>

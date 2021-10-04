@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Food Delivery App</string>
+    <string name="search">Search</string>
+    <string name="delivery">Delivery</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kshs">Kshs.</string>
+    <string name="category">Category</string>
+    <string name="order_now">Order</string>
+    <string name="call_now">Call</string>
+    <string name="restaurants_near_you">Restaurants near you</string>
+    <string name="view_more">View More</string>
+    <string name="active_deliveries">Active Deliveries</string>
+    <string name="completed_deliveries">Completed Deliveries</string>
+    <string name="food_image">food_image</string>
+    <string name="active">Active</string>
+    <string name="delivered">Delivered</string>
+    <string name="icon">icon</string>
+    <string name="profile_image">profile_image</string>
+    <string name="app_author">Dennis Gitonga</string>
+    <string name="phone_no">+2547 12345678</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="home_address">Shipping Address</string>
+    <string name="address">Shipping Address</string>
+    <string name="change_password">Change Password</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="reward_credits">Reward Credits</string>
+    <string name="view">View</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="app_notifications">App Notifications</string>
+    <string name="location_tracking">Location Tracking</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="language">Language</string>
+    <string name="logout">Logout</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="ask_a_question">Ask a Question</string>
+    <string name="help_center">Help Center</string>
+    <string name="about_us">About Us</string>
+    <string name="help">Help</string>
+    <string name="hello_dennis">Hello Dennis</string>
+    <string name="lets_hook_you_up_with_a_good_dish">Lets hook you up with a good dish</string>
+</resources>

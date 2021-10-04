@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#5D2BB6"
+    tools:context=".DeliveryFragment">
+
+
+    <LinearLayout
+        android:id="@+id/chipContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/chip_container_bg"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/activeDeliveries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:text="@string/active_deliveries"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/red" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/completeDeliveries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/grey"
+            android:text="@string/completed_deliveries" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/deliveries_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chipContainer"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:choiceMode="singleChoice"
+        android:numColumns="2"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:clickable="true"
+        android:columnWidth="180dp"
+        android:focusable="true" />
+
+</RelativeLayout>

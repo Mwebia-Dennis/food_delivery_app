@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="8dp"
+    android:layout_margin="3dp"
+    android:id="@+id/foodItem"
+    android:layout_centerHorizontal="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/foodImageView"
+            android:contentDescription="@string/food_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:id="@+id/foodNameView"
+            android:layout_marginStart="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textSize="15sp"
+                android:id="@+id/priceView"
+                android:padding="2dp"
+                android:layout_marginStart="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="3dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_star_rate_24"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/icon"
+                    />
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingView"
+                    android:padding="2dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/restaurantNameContainer"
+                android:layout_below="@id/priceView"
+                android:padding="2dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_location_city_24"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:id="@+id/restaurantNameView"
+                    android:layout_marginStart="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliveryStatusView"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/delivered"
+                android:textColor="#000"
+                android:background="@drawable/complete_deliveries_bg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/deliveryStatusTv"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:id="@+id/deliveryTime"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="3dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
